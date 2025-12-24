@@ -172,9 +172,9 @@ Feel free to fork this repository and submit pull requests for:
 ## 🔗 Resources
 
 - [Conway's Game of Life - Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
-- [LifeWiki Pattern Collection](https://conwaylife.com/wiki/Main_Page)
+- [LifeWiki Pattern Collection](https://conwaylife.appspot.com/library/g)
 - [OpenMP Documentation](https://www.openmp.org/)
 
 ---
 
-**Note**: The `Gameoflife.ipynb` notebook is currently empty and may be used for future Python visualization or analysis. 
+**Note**: The `Gameoflife.ipynb` notebook is currently empty and will be used for future Python visualization with a comprehensive UI. 
