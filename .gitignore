@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Executables
+*.exe
+gol.exe
+.out
