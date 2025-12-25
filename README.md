@@ -2,14 +2,6 @@
 
 A high-performance C++ implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) with memory-optimized bit-packing and OpenMP parallelization.
 
-## 🌟 Features
-
-- **Memory Efficient**: Uses bit-packing to store 8 cells per byte, significantly reducing memory usage
-- **High Performance**: Parallelized with OpenMP for fast computation on large grids
-- **Flexible Initialization**: Support for random generation or custom patterns
-- **Classic Patterns**: Pre-built patterns including gliders, blinkers, and blocks
-- **Console Visualization**: Real-time animation in the terminal
-
 ## 🚀 Quick Start
 
 ### Prerequisites
