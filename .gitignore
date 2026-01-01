@@ -12,3 +12,8 @@
 *.exe
 gol.exe
 .out
+gol_gui.exe
+
+# Git files
+.git
+FETCH_HEAD
