@@ -1,0 +1,32 @@
+[build-system]
+requires = ["scikit-build-core>=0.5", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "gol"
+version = "0.1.0"
+description = "Game of Life — C++ engine with Python TUI and LLM chat"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "textual>=0.40",
+    "httpx",
+    "anthropic",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+ml = ["torch", "jax[cpu]"]
+
+[project.scripts]
+gol = "gol.cli:main"
+gol-tui = "gol.tui.app:main"
+
+[tool.scikit-build]
+cmake.args = ["-DGOL_BUILD_BINDINGS=ON", "-DGOL_BUILD_TESTS=OFF"]
+wheel.packages = ["python/gol"]
+wheel.install-dir = "gol"
+
+[tool.scikit-build.cmake.define]
+GOL_BUILD_BINDINGS = "ON"
+GOL_BUILD_TESTS = "OFF"

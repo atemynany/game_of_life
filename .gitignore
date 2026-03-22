@@ -1,19 +1,51 @@
-# OS files
-.DS_Store
-
-# Logs
-*.log
-
-# Environment variables
-.env
-.env.local
+# Build
+build/
+*.o
+*.a
+*.so
+*.dylib
 
 # Executables
 *.exe
-gol.exe
-.out
-gol_gui.exe
+*.out
+gol_gui
+gol
 
-# Git files
-.git
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+*.whl
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Misc
+*.log
 FETCH_HEAD
+git
+
+# Old root-level source files (archived in old/)
+/gol.cpp
+/gol.hpp
+/gol_gui.cpp
